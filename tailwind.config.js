@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        nav_col: "#219ebc",
-        board_col: "#8ecae6",
-        border_col: "#023047",
+        nav_col: "#f7ede2",
+        board_col: "#f5cac3",
+        border_col: "#84a59d",
       },
     },
   },
