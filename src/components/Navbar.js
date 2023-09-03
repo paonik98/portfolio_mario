@@ -2,12 +2,19 @@
 
 import { DiCodeigniter } from "react-icons/di";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { useState } from "react";
+import DropDownProjects from "./DropDownProjects";
+
 
 function Navbar() {
+
+  const[openProjectMenu,setOpenProjectMenu] = useState(false)
   return (
-    <div className="fixed top-0 left-0 w-screen h-24 border-black border-4 ">
+    <div className="fixed top-0 left-0 w-screen h-24 ">
       <div className="mx-16 flex flex-row justify-end ">
-        <div className="mx-2">
+        <div className="mx-2" 
+        onMouseEnter={() => setOpenProjectMenu((prev) => !prev)}
+        onMouseLeave={() => setOpenProjectMenu((prev) => !prev)}>
           <div
             className="
                         my-4 w-48 h-16
@@ -59,7 +66,11 @@ function Navbar() {
             </div>
           </div>
         </div>
+
       </div>
+      {
+        openProjectMenu && <DropDownProjects/>
+      }
     </div>
   );
 }
