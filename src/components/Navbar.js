@@ -30,6 +30,7 @@ function Navbar() {
               <DiCodeigniter className="mx-2" />
               Projects
             </div>
+            {openProjectMenu && <DropDownProjects />}
           </div>
         </div>
         <div className="mx-2 cursor-pointer">
@@ -67,7 +68,6 @@ function Navbar() {
           </div>
         </div>
       </div>
-      {openProjectMenu && <DropDownProjects />}
     </div>
   );
 }
