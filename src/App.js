@@ -12,7 +12,7 @@ import Board from "./components/Board";
 
 function App() {
   return (
-    <div className="flex bg-gradient-to-t from-[#7bdff2] to-[#f2b5d4]">
+    <div className="flex bg-fixed bg-gradient-to-t from-[#7bdff2] to-[#f2b5d4]">
       <Navbar />
       <Board />
     </div>

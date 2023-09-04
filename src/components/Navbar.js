@@ -5,16 +5,16 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { useState } from "react";
 import DropDownProjects from "./DropDownProjects";
 
-
 function Navbar() {
-
-  const[openProjectMenu,setOpenProjectMenu] = useState(false)
+  const [openProjectMenu, setOpenProjectMenu] = useState(false);
   return (
     <div className="fixed top-0 left-0 w-screen h-24 ">
       <div className="mx-16 flex flex-row justify-end ">
-        <div className="mx-2" 
-        onMouseEnter={() => setOpenProjectMenu((prev) => !prev)}
-        onMouseLeave={() => setOpenProjectMenu((prev) => !prev)}>
+        <div
+          className="mx-2 cursor-pointer"
+          onMouseEnter={() => setOpenProjectMenu((prev) => !prev)}
+          onMouseLeave={() => setOpenProjectMenu((prev) => !prev)}
+        >
           <div
             className="
                         my-4 w-48 h-16
@@ -32,7 +32,7 @@ function Navbar() {
             </div>
           </div>
         </div>
-        <div className="mx-2">
+        <div className="mx-2 cursor-pointer">
           <div
             className="
                         my-4 w-16 h-16
@@ -49,7 +49,7 @@ function Navbar() {
             </div>
           </div>
         </div>
-        <div className="mx-2">
+        <div className="mx-2 cursor-pointer">
           <div
             className="
                         my-4 w-16 h-16
@@ -66,11 +66,8 @@ function Navbar() {
             </div>
           </div>
         </div>
-
       </div>
-      {
-        openProjectMenu && <DropDownProjects/>
-      }
+      {openProjectMenu && <DropDownProjects />}
     </div>
   );
 }
