@@ -6,12 +6,12 @@ function Board() {
           <div className="flex flex-row">
             <div
               className="mx-4 flex w-52 h-52 rounded-full  
-                        border-4 border-black overflow-hidden
+                        border-5 border-black overflow-hidden
                         shadow-2xl"
             >
               <img
                 src="https://images.unsplash.com/photo-1535930749574-1399327ce78f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80"
-                className="scale-150 translate-y-8 translate-x-2"
+                className="scale-150 translate-y-10 translate-x-4 hover:scale-200 transition duration-1000"
                 alt="skrt"
               ></img>
             </div>

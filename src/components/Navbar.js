@@ -19,7 +19,7 @@ function Navbar() {
             className="
                         my-4 w-48 h-16
                         bg-[#b2f7ef] hover:bg-[#7bdff2]
-                        rounded-3xl hover:rounded-xl 
+                        rounded-full 
                         transition-all duration-300 ease-liner 
                         border-black border-4 "
           >
@@ -38,7 +38,7 @@ function Navbar() {
             className="
                         my-4 w-16 h-16
                         bg-[#b2f7ef] hover:bg-[#7bdff2]
-                        rounded-3xl hover:rounded-xl 
+                        rounded-full 
                         transition-all duration-300 ease-liner 
                         border-black border-4 "
           >
@@ -55,7 +55,7 @@ function Navbar() {
             className="
                         my-4 w-16 h-16
                         bg-[#b2f7ef] hover:bg-[#7bdff2]
-                        rounded-3xl hover:rounded-xl 
+                        rounded-full 
                         transition-all duration-300 ease-liner 
                         border-black border-4 "
           >
