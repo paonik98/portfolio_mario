@@ -3,9 +3,13 @@ function Board() {
     <div className="">
       <div className="h-screen grid place-items-center">
         <div className="w-screen grid place-items-center">
-          <div className="flex flex-row">
+          <div className="flex flex-col md:flex-row ">
             <div
-              className="mx-4 flex w-52 h-52 rounded-full  
+              className="justify-items-center
+                        mx-4 flex 
+                        w-44 md:w-36 lg:w-44 xl:w-52 
+                        h-44 md:h-36 lg:h-44 xl:h-52 
+                        rounded-full  
                         border-5 border-black overflow-hidden
                         shadow-2xl"
             >
@@ -16,8 +20,14 @@ function Board() {
               ></img>
             </div>
             <div>
-              <p className="font-mono text-9xl">Mario Paone</p>
-              <p className="font-mono text-7xl">Software developer</p>
+              <p className="font-mono justify-items-center
+                            text-5xl md:text-7xl lg:text-8xl xl:text-9xl">
+                              Mario Paone
+              </p>
+              <p className="font-mono justify-items-center
+                            text-3xl md:text-5xl lg:text-6xl xl:text-7xl">
+                Software developer
+              </p>
             </div>
           </div>
         </div>
