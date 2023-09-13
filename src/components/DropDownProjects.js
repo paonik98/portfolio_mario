@@ -11,14 +11,20 @@ function DropDownProjects() {
       >
         <ul className="px-2 py-1 font-bold font-sans">
           <li className="px-1 rounded-xl hover:bg-[#7bdff2] ">
-            <Link to="test1" spy={true} smooth={true} duration={500}>
+            <Link to="project1" spy={true} smooth={true} duration={500}>
               Portfolio
             </Link>
           </li>
           <li className="px-1 rounded-xl hover:bg-[#7bdff2] ">
-            Madetteranean tour
+            <Link to="project2" spy={true} smooth={true} duration={500}>
+              Madetteranean tour
+            </Link>
           </li>
-          <li className="px-1 rounded-xl hover:bg-[#7bdff2] ">Berlusca</li>
+          <li className="px-1 rounded-xl hover:bg-[#7bdff2] ">
+            <Link to="project3" spy={true} smooth={true} duration={500}>
+              Berlusca
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
