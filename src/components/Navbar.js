@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="fixed top-0 left-0 w-screen h-24 ">
+    <div className="fixed z-40 top-0 left-0 w-screen h-24 ">
       <div className="mx-16 flex flex-row justify-end ">
         {/* First element of navbar */}
         <NavLink to="/">
