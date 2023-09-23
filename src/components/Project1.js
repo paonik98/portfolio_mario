@@ -1,4 +1,6 @@
 import Carousel from "./Carousel";
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 function Project1() {
   const slides = [
@@ -19,6 +21,15 @@ function Project1() {
   return (
     <div className="h-screen grid place-items-center" id="project1">
       <div className="px-16">
+        <Link
+          to="projectboard"
+          spy={true}
+          smooth={true}
+          duration={500}
+          className="cursor-pointer"
+        >
+          <BsFillArrowUpCircleFill />
+        </Link>
         <Carousel data={slides} />
       </div>
     </div>
